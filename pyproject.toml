@@ -1,0 +1,22 @@
+[project]
+name = "numba-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "raketenpaule", email = "thomas.jurczyk@tjurczyk.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "numba>=0.68.0",
+    "numpy>=2.4.6",
+]
+
+[project.scripts]
+numba-test = "numba_test:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
